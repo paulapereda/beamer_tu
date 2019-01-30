@@ -1,0 +1,63 @@
+\documentclass{beamer}
+
+\usetheme{beamer_tu}
+\usepackage{lmodern}
+\usepackage{fontspec}
+\usepackage[spanish]{babel}
+\usepackage[scale=2]{ccicons}
+\usepackage{graphicx}
+\usepackage{tikz}
+
+
+\title{Beamer Transforma Uruguay}
+\subtitle{}
+\date{\today}
+\author{Paula Pereda}
+\institute{\url{http://github.com/transformauy}}
+\begin{document}
+
+{
+  \usebackgroundtemplate{\includegraphics[width=\paperwidth]{img/caratula.png}}
+  \begin{frame}
+   \vspace*{80pt}
+   \hspace*{1em}
+\titlepage
+  \end{frame}
+}
+
+\setbeamertemplate{background canvas}{\includegraphics[width=\paperwidth]{img/fondo.png}}
+
+\begin{frame}{Ejemplo}
+  \framesubtitle{Un template de beamer de Transforma Uruguay}
+
+  \texttt{beamer\_tu} incluye: 
+
+  \begin{columns}
+    \column{.5\textwidth}
+      \begin{itemize}
+        \item la \alert{paleta de colores} de la marca
+        \item imagen de carátula
+        \item imagen de fondo
+      \end{itemize}
+
+    \column{.5\textwidth}
+      \begin{block}{Sobre la paleta...}
+         los colores son: verde, naranja, gris y azul
+      \end{block}
+  \end{columns}
+  
+\end{frame}
+
+\begin{frame}{Licencia}
+
+  \begin{block}{Se puede obtener la fuente del template y una presentación demo aquí:}
+
+  \begin{center}\url{https://github.com/transformauy/simple_beamer}\end{center}
+
+  \end{block}
+  
+  \begin{block}{El tema está basado en el tema 'simple' de Facundo Muñoz}
+  \end{block}
+\end{frame}
+
+\end{document}

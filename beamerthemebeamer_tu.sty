@@ -1,0 +1,57 @@
+
+\ProvidesPackage{beamerthemebeamer_tu}
+
+\usepackage{tikz}
+\usetikzlibrary{arrows,shapes,trees,positioning,fadings}
+
+\definecolor{verde}{RGB}{186,203,51}
+\definecolor{naranja}{RGB}{247,148,30}
+\definecolor{gris}{RGB}{153,155,158}
+\definecolor{azul}{RGB}{41,116,180}
+
+\input xkeyval
+
+\def\@hos{}
+\def\@vos{}
+\def\@alpha{} % This one does not work. Why?
+\define@key{setwatermark}{hoffset}[\def\@hos{.}]{\def\@hos{\hspace*{#1}}} 
+\define@key{setwatermark}{voffset}[\def\@vos{.}]{\def\@vos{\vspace*{#1}}} 
+\define@key{setwatermark}{alpha}[\def\@alpha{0.7}]{\def\@alpha{#1}} 
+
+\def\setwatermark{\@ifnextchar[\@setwatermark{\@setwatermark[]}}
+\def\@setwatermark[#1]#2{%
+  \setkeys{setwatermark}{#1}%
+  \def\@watermark{#2}
+}
+
+\mode<presentation>
+
+  \definecolor{destacado}{HTML}{000000} % gris oscuro
+  \definecolor{normal}{HTML}{515151}  % gris medio
+  \definecolor{fondo}{HTML}{e6e6e6}  % gris claro
+ 
+  \setbeamercolor{normal text}{bg=white,fg=normal}
+  \setbeamercolor*{block title}{bg=fondo,fg=destacado}
+  \setbeamercolor*{block body}{bg=fondo,fg=normal}
+  \setbeamercolor{alerted text}{fg=black}
+  
+  \usetheme{default}
+  \usecolortheme[named=destacado]{structure}
+  \usefonttheme{structurebold}
+
+  \setbeamercovered{transparent}
+  
+  \setbeamertemplate{footline}[frame number]
+  
+  \setbeamertemplate{navigation symbols}{}
+
+  \setbeamertemplate{blocks}[rounded][shadow=true]
+
+  \setbeamersize{text margin left=0.4cm,text margin right=0.4cm}
+ 
+ \makeatletter
+  \setbeamertemplate{frametitle}[default][right,rightskip=\the\dimexpr\beamer@rightmargin-0.3cm\relax]
+ \makeatother
+
+\mode
+<all>
