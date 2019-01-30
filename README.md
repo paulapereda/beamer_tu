@@ -4,8 +4,10 @@ Este es un `LaTeX beamer theme` para Transforma Uruguay. Está diseñado para ma
 
 ![ejemplo](/img/ejemplo.png)
 
+![ejemplo](/img/ejemplo_2.png)
 
+Hay un ejemplo del template [aquí.](https://github.com/paulapereda/beamer_tu/blob/master/ejemplo.pdf)
 
 ## Instalación
 
-Copiar el archivo `beamerthemebeamer_tu.sty` en el mismo directorio en el que se encuentra tu proyecto.
+Copiar el archivo `beamerthemebeamer_tu.sty` en el mismo directorio en el que se encuentra tu proyecto. 
