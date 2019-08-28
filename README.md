@@ -4,7 +4,7 @@ Este es un `LaTeX beamer theme` para Transforma Uruguay. Está diseñado para ma
 
 ![ejemplo](img/ejemplo.png)
 
-![ejemplo](img/ejemplo_2.png)
+![ejemplo](/img/ejemplo_2.jpg)
 
 Hay un ejemplo del template [aquí.](https://github.com/paulapereda/beamer_tu/blob/master/ejemplo.pdf)
 
